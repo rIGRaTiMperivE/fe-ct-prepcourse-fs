@@ -40,8 +40,9 @@ function invocarMetodo(objeto, metodo) {
    // [NOTA]: no necesitar retornar nada.
    // Tu código:
 
-     objeto = {metodo};
-     objeto.metodo();
+   objeto[metodo]();
+
+     
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -164,7 +165,9 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
              return restar;
 
   }
-  return
+  return objetoProducto;
+
+  
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
